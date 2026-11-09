@@ -601,6 +601,8 @@ body {
     font-size: 34px;
     font-weight: 900;
     letter-spacing: 0.6em;
+    padding-left: 0.6em;
+    /* 右側のすき間と同じだけ左にも空けて、真ん中にそろえる */
     text-align: center;
 }
 
