@@ -6,7 +6,7 @@
 - 田中係長と5回勝負して、機嫌がよければ昇進、ダメなら左遷されます
 
 ## ③アプリのデプロイURL
-なし
+- https://tiz1112.github.io/settai_janken_pro/
 
 ## ④アプリのログイン用IDまたはPassword（ある場合）
 なし
