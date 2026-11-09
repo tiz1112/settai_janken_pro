@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>接待じゃんけん 出世編</title>
+  <!-- Google Fonts（見出し：Dela Gothic One、本文：Zen Kaku Gothic New、書類：Zen Old Mincho） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Zen+Kaku+Gothic+New:wght@400;700;900&family=Zen+Old+Mincho:wght@700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <!-- ① タイトル画面 -->
+    <section class="screen title-screen">
+      <div class="lanterns">
+        <div class="lantern">接</div>
+        <div class="lantern">待</div>
+        <div class="lantern">中</div>
+      </div>
+      <h1 class="title">接待<br><span class="title-accent">じゃんけん</span></h1>
+      <p class="tagline">勝ったら出世が遠のく。</p>
+
+      <div class="rules">
+        <p class="rules-title">ルール</p>
+        <p class="rule"><span class="tag lose">負ける</span>上司の機嫌が上がる。でも負け続けると「わざと？」と疑われる</p>
+        <p class="rule"><span class="tag draw">あいこ</span>いい勝負に見えて、疑いが晴れる</p>
+        <p class="rule"><span class="tag win">勝つ</span>疑いは消えるが、機嫌が大きく下がる</p>
+        <p class="rule"><span class="tag">突破</span>5回勝負して、機嫌70以上なら昇進</p>
+      </div>
+
+      <button class="start-button">入社する</button>
+    </section>
+    <!-- /.title-screen -->
+
+    <!-- ② 申し送り画面 -->
+    <section class="screen brief-screen">
+      <div class="memo">
+        <p class="memo-from">人事部より 申し送り</p>
+        <img class="brief-face" src="img/boss_tanaka_normal.png" alt="上司">
+        <h2 class="brief-name">係長　田中</h2>
+        <p class="memo-label">癖</p>
+        <p class="brief-habit">前回と同じ手を、つい続けて出しがち</p>
+        <p class="memo-label">性格</p>
+        <p class="brief-memo">単純でノリがいい</p>
+        <p class="memo-label">目標</p>
+        <p>5回勝負して、機嫌70以上。疑いが100になったら即アウト</p>
+      </div>
+
+      <button class="brief-button">接待を始める</button>
+    </section>
+    <!-- /.brief-screen -->
+
+    <!-- ③ 対戦画面 -->
+    <section class="screen play-screen">
+      <div class="hud">
+        <p class="boss-name">係長　田中</p>
+        <p class="round">1 / 5 回戦</p>
+      </div>
+
+      <!-- メーター -->
+      <div class="meters">
+        <div class="meter">
+          <p class="meter-label">機嫌（目標70）<span class="mood-number">50</span></p>
+          <div class="bar">
+            <div class="bar-fill mood-bar"></div>
+          </div>
+        </div>
+        <div class="meter">
+          <p class="meter-label">疑い（100でアウト）<span class="sus-number">0</span></p>
+          <div class="bar">
+            <div class="bar-fill sus-bar"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 上司とセリフ -->
+      <div class="stage">
+        <div class="boss-row">
+          <img class="boss-face" src="img/boss_tanaka_normal.png" alt="上司">
+          <p class="speech">よーし、いくぞ！</p>
+        </div>
+
+        <!-- お互いの手 -->
+        <div class="table">
+          <p class="boss-hand">✊</p>
+          <p class="vs">VS</p>
+          <p class="my-hand">✊</p>
+        </div>
+
+        <p class="call">最初はグー、じゃんけん…</p>
+        <p class="delta"></p>
+      </div>
+
+      <!-- 手のボタン -->
+      <div class="hand-buttons">
+        <button class="hand-button" data-hand="0">✊<br>グー</button>
+        <button class="hand-button" data-hand="1">✌️<br>チョキ</button>
+        <button class="hand-button" data-hand="2">✋<br>パー</button>
+      </div>
+
+      <button class="next-button">次の勝負へ</button>
+
+      <p class="habit-note">申し送り：前回と同じ手を、つい続けて出しがち</p>
+    </section>
+    <!-- /.play-screen -->
+
+    <!-- ④ 辞令画面 -->
+    <section class="screen result-screen">
+      <div class="decree">
+        <h2 class="decree-title">辞令</h2>
+        <p>あなた 殿</p>
+        <p class="decree-text">主任に任ずる</p>
+        <p class="decree-reason">係長田中氏への接待における、見事な負けっぷりを評価する。</p>
+        <p class="decree-date">昭和六十三年 11月7日</p>
+        <p class="decree-org">株式会社 接待商事 人事部</p>
+        <p class="hanko">人事</p>
+      </div>
+
+      <div class="boss-comment">
+        <img class="comment-face" src="img/boss_tanaka_happy.png" alt="上司">
+        <p class="comment-line">君の負けっぷりは、実に見事だった。</p>
+      </div>
+
+      <p class="stats">負けた 0回 ／ あいこ 0回 ／ 勝った 0回</p>
+
+      <button class="result-button">次の上司へ</button>
+    </section>
+    <!-- /.result-screen -->
+
+  </div>
+  <!-- /.wrapper -->
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
