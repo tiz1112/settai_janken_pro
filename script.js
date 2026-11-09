@@ -88,14 +88,14 @@ function showRound() {
 function showResult(type) {
    if (type === "clear") {
       $(".decree-text").text("主任に任ずる");
-      $(".decree-reason").text("係長田中氏への接待における、見事な負けっぷりを評価する。");
+      $(".decree-reason").text("係長田中への接待における、見事な負けっぷりを評価する。");
       $(".hanko").text("人事");
       $(".comment-face").attr("src", "img/boss_tanaka_happy.png");
       $(".comment-line").text("君の負けっぷりは、実に見事だった。");
       $(".result-button").text("もう一度、接待する");
    } else if (type === "stay") {
       $(".decree-text").text("昇進を見送る");
-      $(".decree-reason").text("係長田中氏の機嫌を、取りきれなかったため。");
+      $(".decree-reason").text("係長田中の機嫌を、取りきれなかったため。");
       $(".hanko").text("据置");
       $(".comment-face").attr("src", "img/boss_tanaka_normal.png");
       $(".comment-line").text("まあ、悪くはなかったがね。");
@@ -108,7 +108,7 @@ function showResult(type) {
          $(".decree-reason").text("わざと負けていることが、係長田中氏に見抜かれたため。");
          $(".comment-line").text("……君の接待は、見え透いているんだよ。");
       } else {
-         $(".decree-reason").text("係長田中氏を、本気で怒らせたため。");
+         $(".decree-reason").text("係長田中を、本気で怒らせたため。");
          $(".comment-line").text("顔も見たくない。");
       }
       $(".hanko").text("左遷");

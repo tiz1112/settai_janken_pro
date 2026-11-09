@@ -228,6 +228,8 @@ body {
 .next-button {
     display: none;
     /* 手を出すまで隠しておく */
+    height: 76px;
+    /* 手のボタンと同じ高さ */
 }
 
 /* ===== 大きいボタン共通（入社する・接待を始める・次へ・辞令） ===== */
@@ -377,8 +379,6 @@ body {
     /* 紙の色 */
     border-radius: 4px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
-    transform: rotate(-0.6deg);
-    /* 机に置いた紙のように少し傾ける */
 }
 
 .memo-from {
