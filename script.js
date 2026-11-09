@@ -105,7 +105,7 @@ function showResult(type) {
       let place = places[Math.floor(Math.random() * places.length)];
       $(".decree-text").text(place + "への異動を命ずる");
       if (type === "sus") {
-         $(".decree-reason").text("わざと負けていることが、係長田中氏に見抜かれたため。");
+         $(".decree-reason").text("わざと負けていることが、係長田中に見抜かれたため。");
          $(".comment-line").text("……君の接待は、見え透いているんだよ。");
       } else {
          $(".decree-reason").text("係長田中を、本気で怒らせたため。");
@@ -116,7 +116,7 @@ function showResult(type) {
       $(".result-button").text("転職して出直す");
    }
 
-   $(".stats").text("負けた " + loseCount + "回 ／ あいこ " + drawCount + "回 ／ 勝った " + winCount + "回");
+   $(".stats").text("負け " + loseCount + "回 ／ あいこ " + drawCount + "回 ／ 勝ち " + winCount + "回");
 
    $(".play-screen").hide();
    $(".result-screen").css("display", "flex");
